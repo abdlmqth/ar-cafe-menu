@@ -26,7 +26,9 @@ function showCategory(category, btn) {
 }
 
 function openAR(dishName) {
-  // This will open the AR viewer in Phase 6
-  // For now it confirms which dish was selected
-  alert('AR coming soon for: ' + dishName);
+  if (dishName === 'club-sandwich') {
+    window.location.href = 'ar-viewer.html';
+  } else {
+    alert('AR coming soon for: ' + dishName);
+  }
 }
