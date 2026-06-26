@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thrive Caffe</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>THRIVE CAFFE</h1>
+    <p class="tagline">Journalist Colony, Jubilee Hills, Hyderabad</p>
+  </header>
+
+  <nav>
+    <button class="cat-btn active" onclick="showCategory('all', this)">All</button>
+    <button class="cat-btn" onclick="showCategory('sandwiches', this)">Sandwiches</button>
+    <button class="cat-btn" onclick="showCategory('mexican', this)">Mexican</button>
+    <button class="cat-btn" onclick="showCategory('sharing', this)">Sharing Plates</button>
+    <button class="cat-btn" onclick="showCategory('fries', this)">French Fries</button>
+  </nav>
+
+  <main>
+
+    <!-- SANDWICHES -->
+    <p class="section-title">Sandwiches</p>
+
+    <div class="dish-card" data-category="sandwiches">
+      <div class="dish-info">
+        <h3>Grilled Vegetable & Pesto Sandwich</h3>
+        <p>Fresh grilled vegetables with house pesto</p>
+        <span class="price">₹325</span>
+      </div>
+      <button class="ar-btn" onclick="openAR('grilled-veg-sandwich')">View in AR</button>
+    </div>
+
+    <div class="dish-card" data-category="sandwiches">
+      <div class="dish-info">
+        <h3>New York 4 Cheese Grilled Sandwich</h3>
+        <p>Four melted cheeses on toasted bread</p>
+        <span class="price">₹295</span>
+      </div>
+      <button class="ar-btn" onclick="openAR('cheese-sandwich')">View in AR</button>
+    </div>
+
+    <div class="dish-card" data-category="sandwiches">
+      <div class="dish-info">
+        <h3>Fried Chicken Sandwich</h3>
+        <p>Crispy fried chicken with fresh toppings</p>
+        <span class="price">₹325</span>
+      </div>
+      <button class="ar-btn" onclick="openAR('fried-chicken-sandwich')">View in AR</button>
+    </div>
+
+    <div class="dish-card" data-category="sandwiches">
+      <div class="dish-info">
+        <h3>Thrive Club Chicken Sandwich</h3>
+        <p>Our signature triple-decker club sandwich</p>
+        <span class="price">₹389</span>
+      </div>
+      <button class="ar-btn" onclick="openAR('club-sandwich')">View in AR</button>
+    </div>
+
+    <!-- MEXICAN -->
+    <p class="section-title">Mexican</p>
+
+    <div class="dish-card" data-category="mexican">
+      <div class="dish-info">
+        <h3>Roasted Cauliflower Avocado Tacos</h3>
+        <p>Smoky roasted cauliflower with fresh avocado</p>
+        <span class="price">₹275</span>
+      </div>
+      <button class="ar-btn" onclick="openAR('cauliflower-tacos')">View in AR</button>
+    </div>
+
+    <div class="dish-card" data-category="mexican">
+      <div class="dish-info">
+        <h3>Mexa Birria Quesadillas</h3>
+        <p>Slow-cooked birria with melted cheese</p>
+        <span class="price">₹295</span>
+      </div>
+      <button class="ar-btn" onclick="openAR('birria-quesadillas')">View in AR</button>
+    </div>
+
+    <div class="dish-card" data-category="mexican">
+      <div class="dish-info">
+        <h3>Pulled Chicken With Avocado Tacos</h3>
+        <p>Tender pulled chicken with creamy avocado</p>
+        <span class="price">₹295</span>
+      </div>
+      <button class="ar-btn" onclick="openAR('pulled-chicken-tacos')">View in AR</button>
+    </div>
+
+    <div class="dish-card" data-category="mexican">
+      <div class="dish-info">
+        <h3>Mexa Chicken Birria Quesadillas</h3>
+        <p>Chicken birria with signature house spices</p>
+        <span class="price">₹295</span>
+      </div>
+      <button class="ar-btn" onclick="openAR('chicken-birria-quesadillas')">View in AR</button>
+    </div>
+
+    <div class="dish-card" data-category="mexican">
+      <div class="dish-info">
+        <h3>Nachos With Salsa</h3>
+        <p>Crispy tortilla chips with fresh tomato salsa</p>
+        <span class="price">₹275</span>
+      </div>
+      <button class="ar-btn" onclick="openAR('nachos')">View in AR</button>
+    </div>
+
+    <div class="dish-card" data-category="mexican">
+      <div class="dish-info">
+        <h3>Shrimp Guacamole Bites</h3>
+        <p>Juicy shrimp on fresh house guacamole</p>
+        <span class="price">₹275</span>
+      </div>
+      <button class="ar-btn" onclick="openAR('shrimp-guacamole')">View in AR</button>
+    </div>
+
+    <!-- SHARING PLATES -->
+    <p class="section-title">Sharing Plates</p>
+
+    <div class="dish-card" data-category="sharing">
+      <div class="dish-info">
+        <h3>Cream Cheese Stuffed Chilli Poppers</h3>
+        <p>Spicy chillies stuffed with cream cheese</p>
+        <span class="price">₹295</span>
+      </div>
+      <button class="ar-btn" onclick="openAR('chilli-poppers')">View in AR</button>
+    </div>
+
+    <div class="dish-card" data-category="sharing">
+      <div class="dish-info">
+        <h3>Chicken Karage</h3>
+        <p>Japanese-style crispy fried chicken</p>
+        <span class="price">₹325</span>
+      </div>
+      <button class="ar-btn" onclick="openAR('chicken-karage')">View in AR</button>
+    </div>
+
+    <div class="dish-card" data-category="sharing">
+      <div class="dish-info">
+        <h3>Peri Peri Chicken Wings</h3>
+        <p>Flame-grilled wings in peri peri sauce</p>
+        <span class="price">₹325</span>
+      </div>
+      <button class="ar-btn" onclick="openAR('peri-peri-wings')">View in AR</button>
+    </div>
+
+    <div class="dish-card" data-category="sharing">
+      <div class="dish-info">
+        <h3>BeerBatter Fish And Chips</h3>
+        <p>Golden beer-battered fish with thick chips</p>
+        <span class="price">₹325</span>
+      </div>
+      <button class="ar-btn" onclick="openAR('fish-and-chips')">View in AR</button>
+    </div>
+
+    <div class="dish-card" data-category="sharing">
+      <div class="dish-info">
+        <h3>Butter Garlic Prawns</h3>
+        <p>Juicy prawns in rich butter garlic sauce</p>
+        <span class="price">₹325</span>
+      </div>
+      <button class="ar-btn" onclick="openAR('butter-prawns')">View in AR</button>
+    </div>
+
+    <!-- FRENCH FRIES -->
+    <p class="section-title">French Fries</p>
+
+    <div class="dish-card" data-category="fries">
+      <div class="dish-info">
+        <h3>Salted Fries</h3>
+        <p>Classic crispy fries with sea salt</p>
+        <span class="price">₹255</span>
+      </div>
+      <button class="ar-btn" onclick="openAR('salted-fries')">View in AR</button>
+    </div>
+
+    <div class="dish-card" data-category="fries">
+      <div class="dish-info">
+        <h3>Peri Peri Fries</h3>
+        <p>Crispy fries tossed in peri peri spice</p>
+        <span class="price">₹255</span>
+      </div>
+      <button class="ar-btn" onclick="openAR('peri-peri-fries')">View in AR</button>
+    </div>
+
+    <div class="dish-card" data-category="fries">
+      <div class="dish-info">
+        <h3>Parmesan Truffle Fries</h3>
+        <p>Premium fries with truffle oil and parmesan</p>
+        <span class="price">₹295</span>
+      </div>
+      <button class="ar-btn" onclick="openAR('truffle-fries')">View in AR</button>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
